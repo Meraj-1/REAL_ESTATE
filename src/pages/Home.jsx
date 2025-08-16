@@ -3,6 +3,7 @@ import Header from '../components/Header.jsx'
 import Navbar from '../components/Navbar.jsx'
 import Hero from '../components/Hero.jsx'
 import Options from '../components/Options.jsx'
+import Properties from '../components/Properties.jsx'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Navbar/>
         <Hero/>
         <Options/>
+        <Properties/>
     </div>
   )
 }

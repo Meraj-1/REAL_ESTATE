@@ -6,6 +6,7 @@ import Oprion1 from './Home.png'
 import Option2 from './smart.png'
 import Option3 from './Option.png'
 import Option4 from './Unlock.png'
+import star from './star.png'
 
 const assets = {
     Symbol,
@@ -15,7 +16,8 @@ const assets = {
     Oprion1,
     Option2,
     Option3,
-    Option4
+    Option4,
+    star
 }
 
 

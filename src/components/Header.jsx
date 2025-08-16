@@ -7,7 +7,7 @@ const Header = () => {
 
   if (!visible) return null;
   return (
-    <div className="bg-[url('./assets/Abstract.png')] bg-gray-900 border-b-1  border-gray-700 py-3 relative">
+    <div className="bg-[url('./assets/Abstract.png')] bg-[#1A1A1A]  border-b-1  border-gray-700 py-3 relative">
       {/* Main Banner */}
       <div className="flex justify-center items-center gap-4">
         <p className="text-white font-thin">

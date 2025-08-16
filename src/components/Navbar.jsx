@@ -4,7 +4,7 @@ import assets from '../assets/assets'
 const Navbar = () => {
   return (
     
-    <div className='flex px-30 justify-between items-center bg-gray-900 p-4 shadow-md'>
+    <div className='flex px-30 justify-between items-center bg-[#1A1A1A] p-4 shadow-md'>
         <div className='flex gap-2'>
             <img className='h-8 w-auto' src={assets.Symbol} alt="" />
             <p className='text-2xl text-white font-bold'>Estatein</p>
