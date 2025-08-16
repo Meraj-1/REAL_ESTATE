@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.jsx'
 import Hero from '../components/Hero.jsx'
 import Options from '../components/Options.jsx'
 import Properties from '../components/Properties.jsx'
+import Testimonials from '../components/Testimonials.jsx'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero/>
         <Options/>
         <Properties/>
+        <Testimonials/>
     </div>
   )
 }

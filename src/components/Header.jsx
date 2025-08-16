@@ -9,20 +9,20 @@ const Header = () => {
   return (
     <div className="bg-[url('./assets/Abstract.png')] bg-[#1A1A1A]  border-b-1  border-gray-700 py-3 relative">
       {/* Main Banner */}
-      <div className="flex justify-center items-center gap-4">
-        <p className="text-white font-thin">
+      <div className="flex md:justify-center items-center gap-4">
+        <p className="text-[8px] md:text-md text-white font-thin">
           ✨ Discover Your Dream Property with Estatein
         </p>
         <a
           href="#"
-          className="text-white hover:underline"
+          className="text-[8px] md:text-md text-white hover:underline"
         >
           Learn More
         </a>
       </div>
 
       {/* Icon in corner */}
-      <div className="fixed top-2 right-7 bg-gray-500 p-2 rounded-full flex items-center justify-center shadow-md">
+      <div className="md:fixed md:top-2 md:right-7 bg-gray-500 p-2 rounded-full flex items-center justify-center shadow-md">
         <img
           className="w-3 cursor-pointer"
           onClick={() => setVisible(false)}

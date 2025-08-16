@@ -48,7 +48,7 @@ const Properties = () => {
               {/* </div> */} 
               <p className="text-xs text-gray-300">Price</p>
               <div className="flex gap-3">
-              <p className="font-bold py-2 text-blue-600">
+              <p className="font-bold py-2 text-white">
                 ₹{property.price.toLocaleString()}
               </p>
               <button className="bg-[#703BF7] cursor-pointer px-20 py-2 text-white  rounded-lg hover:bg-gray-800 transition">
@@ -66,7 +66,7 @@ const Properties = () => {
           onClick={handleNext}
           className="bg-[#703BF7] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
         >
-          Next Properties
+        Next ➡
         </button>
       </div>
     </div>
