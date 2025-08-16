@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header.jsx'
-import NavBar from '../components/NavBar.jsx'
+import Navbar from '../components/Navbar.jsx'
 import Hero from '../components/Hero.jsx'
 import Options from '../components/Options.jsx'
 
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
         <Header/>
-        <NavBar/>
+        <Navbar/>
         <Hero/>
         <Options/>
     </div>

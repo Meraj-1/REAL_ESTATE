@@ -1,7 +1,7 @@
 import React from 'react'
 import assets from '../assets/assets'
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     
     <div className='flex px-30 justify-between items-center bg-gray-900 p-4 shadow-md'>
@@ -26,4 +26,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Navbar
