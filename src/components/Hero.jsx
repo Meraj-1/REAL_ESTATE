@@ -76,9 +76,7 @@ const Hero = () => {
               />
               <span className="text-3xl font-extrabold ml-1">+</span>
             </div>
-            <p className="font-extralight text-sm mt-2">
-              Years of Experience
-            </p>
+            <p className="font-extralight text-sm mt-2">Years of Experience</p>
           </div>
         </div>
       </div>
@@ -89,19 +87,23 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[url('./assets/Abstract.png')] bg-cover bg-center opacity-70"></div>
 
         {/* Hero Image */}
-        <img className="relative h-[500px] md:h-[700px] z-10" src={assets.Hero} alt="Hero" />
+        <img
+          className="relative h-[500px] md:h-[700px] z-10"
+          src={assets.Hero}
+          alt="Hero"
+        />
 
         {/* Circular Button */}
         <div className="absolute bottom-10 right-10 bg-gray-900 h-24 w-24 rounded-full flex items-center justify-center">
           {/* <CircularText */}
-            {/* text="1 2 3 4 5 6 7 8 "
+          {/* text="1 2 3 4 5 6 7 8 "
             onHover="speedUp"
             spinDuration={20}
             className="custom-class"
           /> */}
-          <div className="absolute cursor-pointer inset-0 flex items-center justify-center border-2 border-gray-500 rounded-full">
-            <img className="w-6" src={assets.arrow} alt="arrow" />
-          </div>
+          {/* <div className="absolute cursor-pointer inset-0 flex items-center justify-center border-2 border-gray-500 rounded-full">
+            {/* <img className="w-6" src={assets.arrow} alt="arrow" /> */}
+          {/* </div> */} 
         </div>
       </div>
     </div>

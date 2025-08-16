@@ -269,3 +269,23 @@ const testimonal = [
 ]
 
 export { testimonal };
+
+const faqs = [
+  {
+    question: "How do I list my property on Estatein?",
+    answer:
+      "Simply sign up, navigate to your dashboard, and click on 'Add Property'. Fill in the details, upload photos, and submit for approval. Our team will review your submission and publish it once approved."
+  },
+  {
+    question: "Are there any fees for property listings?",
+    answer:
+      "Basic property listings are free. However, premium features like highlighted listings or priority search placement may involve additional fees. These premium options help sellers gain more visibility."
+  },
+  {
+    question: "Is my data secure on Estatein?",
+    answer:
+      "Yes! We use industry-standard encryption and secure servers to keep all user and property data safe. We also regularly update our security systems to protect against emerging threats."
+  }
+];
+
+export {faqs}
