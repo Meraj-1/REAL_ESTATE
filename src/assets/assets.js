@@ -9,6 +9,11 @@ import Option4 from './Unlock.png'
 import star from './star.png'
 import Abs_L from './Abstract-L.png'
 import Abs_R from './Abstract-R.png'
+import Trust from './trust.png'
+import Excellence from './excellence.png'
+import Client from './client.png'
+import about from './about_hero.png'
+
 
 
 const assets = {
@@ -22,7 +27,11 @@ const assets = {
     Option4,
     star,
     Abs_L,
-    Abs_R
+    Abs_R,
+    Trust,
+    Excellence,
+    Client,
+    about
 }
 
 
