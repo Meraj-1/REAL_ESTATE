@@ -7,6 +7,7 @@ import About from './pages/About'
 import Element from './pages/Services'
 import Properties from './pages/Properties'
 import Notfoud from './pages/Notfoud'
+import Footer from './components/Footer'
 // import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='/properties' element={<Properties/>}/>
       <Route path='*' element={<Notfoud/>}/>
      </Routes>
+     <Footer/>
     </>
   )
 }
