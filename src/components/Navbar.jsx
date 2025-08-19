@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // hamburger + close icons
 import assets from "../assets/assets";
-
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,10 +16,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 font-light text-sm text-white">
-          <li className="hover:text-gray-400 cursor-pointer">Home</li>
-          <li className="hover:text-gray-400 cursor-pointer">Properties</li>
-          <li className="hover:text-gray-400 cursor-pointer">About Us</li>
-          <li className="hover:text-gray-400 cursor-pointer">Services</li>
+          <Link to='/'> <li className="hover:text-gray-400 cursor-pointer">Home</li></Link>
+          <Link to='/properties'> <li className="hover:text-gray-400 cursor-pointer">Properties</li></Link>
+          <Link to='/about'><li className="hover:text-gray-400 cursor-pointer">About Us</li></Link>
+          <Link to='/service'><li className="hover:text-gray-400 cursor-pointer">Services</li> </Link>
         </ul>
 
         {/* Contact Button (Desktop only) */}

@@ -8,12 +8,16 @@ import Element from './pages/Services'
 import Properties from './pages/Properties'
 import Notfoud from './pages/Notfoud'
 import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
 // import './App.css'
 
 function App() {
 
   return (
     <>
+    <Header/>
+    <Navbar/>
      <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/about' element={<About/>}/>

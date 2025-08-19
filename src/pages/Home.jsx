@@ -11,8 +11,8 @@ import Thought from '../components/Thought.jsx'
 const Home = () => {
   return (
     <div>
-        <Header/>
-        <Navbar/>
+        {/* <Header/> */}
+        {/* <Navbar/> */}
         <Hero/>
         <Options/>
         <Properties/>
