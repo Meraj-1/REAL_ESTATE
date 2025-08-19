@@ -29,7 +29,7 @@ const Hero = () => {
         {/* Stats Section */}
         <div className="mt-10 flex flex-wrap gap-6 md:gap-10">
           {/* Customers */}
-          <div className="bg-gray-900 px-8 py-4 rounded-3xl text-center">
+          <div className="bg-[#1A1A1A] px-8 py-4 rounded-3xl text-center">
             <div className="flex justify-center items-end">
               <CountUp
                 from={0}
@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
 
           {/* Properties */}
-          <div className="bg-gray-900 px-8 py-4 rounded-3xl text-center">
+          <div className="bg-[#1A1A1A] px-8 py-4 rounded-3xl text-center">
             <div className="flex justify-center items-end">
               <CountUp
                 from={0}
@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
 
           {/* Years */}
-          <div className="bg-gray-900 px-8 py-4 rounded-3xl text-center">
+          <div className="bg-[#1A1A1A] px-8 py-4 rounded-3xl text-center">
             <div className="flex justify-center items-end">
               <CountUp
                 from={0}
@@ -94,7 +94,7 @@ const Hero = () => {
         />
 
         {/* Circular Button */}
-        <div className="absolute bottom-10 right-10 bg-gray-900 h-24 w-24 rounded-full flex items-center justify-center">
+        <div className="absolute bottom-10 right-10 bg-[#1A1A1A] h-24 w-24 rounded-full flex items-center justify-center">
           {/* <CircularText */}
           {/* text="1 2 3 4 5 6 7 8 "
             onHover="speedUp"

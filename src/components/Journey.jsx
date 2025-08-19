@@ -16,9 +16,9 @@ const Journey = () => {
           and gained the trust of <br />
           countless clients.
         </p>
-        <div className="mt-10 flex flex-wrap gap-6 md:gap-10">
+        <div className="mt-10 flex gap-6 md:gap-10">
                  {/* Customers */}
-                 <div className="bg-gray-900 px-8 py-4 rounded-3xl text-center">
+                 <div className="bg-[#1A1A1A] px-10 py-4 rounded-3xl text-center">
                    <div className="flex justify-center items-end">
                      <CountUp
                        from={0}
@@ -30,11 +30,11 @@ const Journey = () => {
                      />
                      <span className="font-extrabold text-3xl ml-1">+</span>
                    </div>
-                   <p className="font-extralight text-sm mt-2">Happy Customers</p>
+                   <p className="font-extralight text-xs mt-2">Happy Customers</p>
                  </div>
        
                  {/* Properties */}
-                 <div className="bg-gray-900 px-8 py-4 rounded-3xl text-center">
+                 <div className="bg-[#1A1A1A] px-8 py-4 rounded-3xl text-center">
                    <div className="flex justify-center items-end">
                      <CountUp
                        from={0}
@@ -53,7 +53,7 @@ const Journey = () => {
                  </div>
        
                  {/* Years */}
-                 <div className="bg-gray-900 px-8 py-4 rounded-3xl text-center">
+                 <div className="bg-[#1A1A1A] px-8 py-4 rounded-3xl text-center">
                    <div className="flex justify-center items-end">
                      <CountUp
                        from={0}

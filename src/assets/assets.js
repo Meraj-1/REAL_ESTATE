@@ -13,10 +13,20 @@ import Trust from './trust.png'
 import Excellence from './excellence.png'
 import Client from './client.png'
 import about from './about_hero.png'
+import twitter from './twitter.png'
+import share from './share.png'
+import team1 from './team1.png'
+import team2 from './team2.png'
+import team3 from './team3.png'
+import team4 from './team4.png'
+
+
+
 
 
 
 const assets = {
+   
     Symbol,
     Abstract,
     Hero,
@@ -31,7 +41,14 @@ const assets = {
     Trust,
     Excellence,
     Client,
-    about
+    about,
+    twitter,
+    share,
+    team1,
+    team2,
+    team3,
+    team4
+
 }
 
 
