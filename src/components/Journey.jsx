@@ -30,7 +30,7 @@ const Journey = () => {
                      />
                      <span className="font-extrabold text-3xl ml-1">+</span>
                    </div>
-                   <p className="font-extralight text-xs mt-2">Happy Customers</p>
+                   <p className="font-extralight text-sm mt-2">Happy Customers</p>
                  </div>
        
                  {/* Properties */}
