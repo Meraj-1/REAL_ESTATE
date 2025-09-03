@@ -1,8 +1,11 @@
 import React from 'react'
+import ServiceExper from '../components/serviceExper'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <ServiceExper/>
+    </div>
   )
 }
 

@@ -15,12 +15,32 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 font-light text-sm text-white">
-          <Link to='/'> <li className="hover:text-gray-400 cursor-pointer">Home</li></Link>
-          <Link to='/properties'> <li className="hover:text-gray-400 cursor-pointer">Properties</li></Link>
-          <Link to='/about'><li className="hover:text-gray-400 cursor-pointer">About Us</li></Link>
-          <Link to='/service'><li className="hover:text-gray-400 cursor-pointer">Services</li> </Link>
-        </ul>
+       <ul className="hidden md:flex gap-6 font-light text-sm text-white">
+  <Link to='/'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white   after:transition-all after:duration-300 hover:after:w-full">
+      Home
+    </li>
+  </Link>
+
+  <Link to='/properties'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      Properties
+    </li>
+  </Link>
+
+  <Link to='/about'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      About Us
+    </li>
+  </Link>
+
+  <Link to='/service'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      Services
+    </li>
+  </Link>
+</ul>
+
 
         {/* Contact Button (Desktop only) */}
         <div className="hidden md:block">
@@ -42,12 +62,32 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-[#1A1A1A] px-6 pb-4">
-          <ul className="flex flex-col gap-4 text-white font-light text-sm">
-            <li className="hover:text-gray-400 cursor-pointer">Home</li>
-            <li className="hover:text-gray-400 cursor-pointer">Properties</li>
-            <li className="hover:text-gray-400 cursor-pointer">About Us</li>
-            <li className="hover:text-gray-400 cursor-pointer">Services</li>
-          </ul>
+          <ul className="hidden md:flex gap-6 font-light text-sm text-white">
+  <Link to='/'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      Home
+    </li>
+  </Link>
+
+  <Link to='/properties'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      Properties
+    </li>
+  </Link>
+
+  <Link to='/about'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      About Us
+    </li>
+  </Link>
+
+  <Link to='/service'>
+    <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">
+      Services
+    </li>
+  </Link>
+</ul>
+
           <div className="mt-4">
             <div className="bg-black px-4 py-2 rounded-md text-center">
               <button className="text-white text-sm font-light cursor-pointer">
