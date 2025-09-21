@@ -1,11 +1,39 @@
 import React from "react";
 import assets from "../assets/assets";
 
+const teamMembers = [
+  {
+    name: "Sarah Johnson",
+    role: "Founder",
+    photo: assets.team1,
+    social: assets.twitter,
+  },
+  {
+    name: "Michael Turner",
+    role: "Legal Counsel",
+    photo: assets.team2,
+    social: assets.twitter,
+  },
+  {
+    name: "David Brown",
+    role: "Property Management",
+    photo: assets.team3,
+    social: assets.twitter,
+  },
+  {
+    name: "Max Mitchell",
+    role: "Founder",
+    photo: assets.team4,
+    social: assets.twitter,
+  },
+];
+
 const Team = () => {
   return (
-    <div className="bg-black text-white md:px-70 pt-30">
-      <div>
-        <img src={assets.star} className="h-6 mb-3" alt="" />
+    <div className="bg-black text-white px-5 sm:px-10 lg:px-20 pt-16">
+      {/* Header */}
+      <div className="max-w-2xl mb-10">
+        <img src={assets.star} className="h-6 mb-3" alt="star" />
         <h1 className="text-3xl font-medium mb-3">Meet the Estatein Team</h1>
         <p className="text-sm text-gray-400">
           At Estatein, our success is driven by the dedication and expertise of
@@ -13,79 +41,38 @@ const Team = () => {
           estate dreams a reality.
         </p>
       </div>
-      <div className="flex justify-around mt-10">
-        <div className="border rounded-3xl bg-[#1A1A1A]">
-          <div className="">
-            <img src={assets.team1} className="p-5 h-60" alt="" />
-     <div className="flex justify-center">
-            <img src={assets.twitter} className="h-7" alt="" />
-         </div>
-          </div>
-          <div className="flex mt-4 flex-col justify-center items-center">
-            <p className="text-sm font-medium">Sarah Johnson</p>
-            <p className="text-xs  text-gray-400">Founder</p>
-          </div>
-          <div className="px-5 py-4 ">
-          <div className="flex rounded-3xl items-center border border-gray-700  bg-[#1A1A1A] justify-between px-3 py-1 gap-10">
-            <p className="text-dm font-extralight">Say Hello</p>
-            <img src={assets.share} className="h-7" alt="" />
-          </div>
-          </div>
-        </div>
-        <div className="border rounded-3xl bg-[#1A1A1A]">
-          <div>
-            <img src={assets.team2} className="p-5 h-60" alt="" />
-            <div className="flex justify-center">
-            <img src={assets.twitter} className="h-7" alt="" />
+
+      {/* Team Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {teamMembers.map((member, index) => (
+          <div
+            key={index}
+            className="bg-[#1A1A1A] border border-gray-700 rounded-3xl overflow-hidden flex flex-col"
+          >
+            <div className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                className="p-5 h-60 w-full object-cover rounded-t-3xl"
+                alt={member.name}
+              />
+              <div className="flex justify-center mb-4">
+                <img src={member.social} className="h-7" alt="social" />
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center mb-4">
+              <p className="text-sm font-medium">{member.name}</p>
+              <p className="text-xs text-gray-400">{member.role}</p>
+            </div>
+
+            <div className="px-5 pb-5">
+              <button className="flex items-center justify-between w-full rounded-3xl border border-gray-700 bg-[#1A1A1A] px-3 py-2 hover:bg-gray-800 transition">
+                <span className="text-sm font-light">Say Hello</span>
+                <img src={assets.share} className="h-5" alt="share" />
+              </button>
             </div>
           </div>
-          <div className="flex mt-4 flex-col justify-center items-center ">
-            <p className="text-sm font-medium">Michael Turner</p>
-            <p className="text-xs  text-gray-400">Legal Councel</p>
-          </div>
-          <div className="px-5 py-4 ">
-            <div className="flex rounded-3xl items-center border border-gray-700  bg-[#1A1A1A] justify-between px-3 py-1 gap-10">
-            <p className="text-dm font-extralight">Say Hello</p>
-            <img src={assets.share} className="h-7" alt="" />
-            </div>
-          </div>
-        </div>
-          <div className="border rounded-3xl bg-[#1A1A1A]">
-          <div>
-            <img src={assets.team3} className="p-5 h-60" alt="" />
-            <div className="flex justify-center">
-            <img src={assets.twitter} className="h-7" alt="" />
-            </div>
-          </div>
-          <div className="flex mt-4 flex-col justify-center items-center ">
-            <p className="text-sm font-medium">David Brown</p>
-            <p className="text-xs  text-gray-400">Property Management</p>
-          </div>
-          <div className="px-5 py-4 ">
-            <div className="flex rounded-3xl items-center border border-gray-700  bg-[#1A1A1A] justify-between px-3 py-1 gap-10">
-            <p className="text-dm font-extralight">Say Hello</p>
-            <img src={assets.share} className="h-7" alt="" />
-            </div>
-          </div>
-        </div>
-           <div className="border rounded-3xl bg-[#1A1A1A]">
-          <div>
-            <img src={assets.team4} className="p-5 h-60" alt="" />
-            <div className="flex justify-center">
-            <img src={assets.twitter} className="h-7" alt="" />
-            </div>
-          </div>
-          <div className="flex mt-4 flex-col justify-center items-center ">
-            <p className="text-sm font-medium">Max Mitchell</p>
-            <p className="text-xs  text-gray-400">Founder</p>
-          </div>
-          <div className="px-5 py-4 ">
-            <div className="flex rounded-3xl items-center border border-gray-700  bg-[#1A1A1A] justify-between px-3 py-1 gap-10">
-            <p className="text-dm font-extralight">Say Hello</p>
-            <img src={assets.share} className="h-7" alt="" />
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
