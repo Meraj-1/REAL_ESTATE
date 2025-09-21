@@ -1,38 +1,33 @@
-import React from 'react'
-import assets from '../assets/assets'
+import React from "react";
+import assets from "../assets/assets";
+
+const optionsData = [
+  { img: assets.Oprion1, text: "Find Your Dream Home" },
+  { img: assets.Option2, text: "Unlock Property Value" },
+  { img: assets.Option3, text: "Effortless Property Management" },
+  { img: assets.Option4, text: "Smart Investment, Informed Decisions" },
+];
 
 const Options = () => {
   return (
-    <div className="pt-2 bg-black  shadow-md">
-      <div className="grid bg-black gap-6 grid-cols-4 border border-gray-700 p-5  text-white text-center">
-        {/* Option 1 */}
-       {/* <div className='border-gray'> */}
-        <div className="flex flex-col rounded-2xl bg-[#1A1A1A] border border-gray-600 p-10 items-center">
-          <img src={assets.Oprion1} alt="Option 1" className="w-16 mb-5 h-16" />
-          <p className="text-sm font-light">Find Your Dream Home</p>
-        </div>
-
-        {/* Option 2 */}
-        <div className="flex flex-col rounded-2xl border bg-[#1A1A1A]  border-gray-700 p-10 items-center">
-          <img src={assets.Option2} alt="Option 2" className="w-16 mb-5 h-16" />
-          <p className="text-sm font-light">Unlock Property Value</p>
-        </div>
-
-        {/* Option 3 */}
-        <div className="flex flex-col border rounded-2xl p-10 bg-[#1A1A1A] border-gray-700  items-center ">
-          <img src={assets.Option3} alt="Option 3" className="w-16 mb-5 h-16" />
-          <p className="text-sm font-light">Effortless Property Management</p>
-        </div>
-
-        {/* Option 4 */}
-        <div className="flex flex-col border p-10 rounded-2xl bg-[#1A1A1A] border-gray-700 items-center gap-2">
-          <img src={assets.Option4} alt="Option 4" className="w-16 mb-5 h-16" />
-          <p className="text-sm font-light">Smart Investment, Informed Decisions</p>
-        </div>
-        </div>
-      {/* </div> */}
+    <div className="bg-black py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-gray-700 p-5 text-white">
+        {optionsData.map((option, index) => (
+          <div
+            key={index}
+            className="flex flex-col rounded-2xl bg-[#1A1A1A] border border-gray-600 p-8 items-center text-center hover:bg-[#222222] transition"
+          >
+            <img
+              src={option.img}
+              alt={option.text}
+              className="w-16 h-16 mb-4"
+            />
+            <p className="text-sm font-light">{option.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Options
+export default Options;
