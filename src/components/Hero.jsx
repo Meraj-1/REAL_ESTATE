@@ -21,22 +21,22 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 mt-6">
-          <button className="px-6 py-3 border border-gray-400 bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
+          <button className="px-6 py-3 border border-gray-400 cursor-pointer bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
             Learn More
           </button>
-          <button className="px-6 py-3 bg-purple-700 text-white rounded-lg text-sm hover:bg-purple-800 transition">
+          <button className="px-6 py-3 bg-purple-700 cursor-pointer  text-white rounded-lg text-sm hover:bg-purple-800 transition">
             Browse Properties
           </button>
         </div>
 
         {/* Stats Section */}
-        <div className="mt-10 flex flex-wrap gap-4 sm:gap-6 md:gap-8">
+        <div className="mt-10 cursor-pointer flex flex-wrap gap-4 sm:gap-6 md:gap-8">
           {/* Customers */}
-          <StatCard count={200} suffix="+" label="Happy Customers" />
+          <StatCard  count={200} suffix="+"  label="Happy Customers" />
           {/* Properties */}
-          <StatCard count={10} suffix="K+" label="Properties For Clients" />
+          <StatCard  count={10} suffix="K+" label="Properties For Clients" />
           {/* Years */}
-          <StatCard count={16} suffix="+" label="Years of Experience" />
+          <StatCard  count={16} suffix="+" label="Years of Experience" />
         </div>
       </div>
 

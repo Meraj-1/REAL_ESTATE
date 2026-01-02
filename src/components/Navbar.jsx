@@ -62,6 +62,10 @@ const Navbar = () => {
           </ul>
 
           <div className="mt-4 text-center">
+ 
+          <div>
+
+          </div>
             <button className="bg-black px-4 py-2 rounded-md text-white text-sm font-light hover:bg-gray-800 transition w-full">
               Contact Us
             </button>

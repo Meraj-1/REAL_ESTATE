@@ -11,7 +11,8 @@ const optionsData = [
 const Options = () => {
   return (
     <div className="bg-black py-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 border border-gray-700 p-5 text-white">
+      <div className="p-[3px] bg-[#1A1A1A] rounded-l  border border-gray-700  mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 rounded-l bg-black cursor-pointer lg:grid-cols-4 gap-6 border border-gray-700 p-5 text-white">
         {optionsData.map((option, index) => (
           <div
             key={index}
@@ -25,6 +26,7 @@ const Options = () => {
             <p className="text-sm font-light">{option.text}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

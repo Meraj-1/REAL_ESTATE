@@ -10,15 +10,17 @@ import Thought from '../components/Thought.jsx'
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-black'>
         {/* <Header/> */}
         {/* <Navbar/> */}
         <Hero/>
         <Options/>
+        <div className='max-w-[1790px] bg-black mx-auto px-4'>
         <Properties/>
         <Testimonials/>
         <Question/>
         <Thought/>
+        </div>
     </div>
   )
 }

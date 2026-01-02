@@ -7,7 +7,8 @@ import Clients from '../components/Clients'
 
 const About = () => {
   return (
-    <div>
+    <div className='bg-black max-w-[1790px] mx-auto px-4'>
+ 
       <Journey/>
       <Value/>
       <Achivements/>

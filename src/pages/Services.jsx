@@ -6,8 +6,11 @@ const Services = () => {
   return (
     <div>
       <ServiceExper/>
+    <div className='bg-black max-w-[1790px mx-auto px-4'>
       <UnlockProp/>
       <SmartInv/>
+    </div>
+
     </div>
   )
 }
