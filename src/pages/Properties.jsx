@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const properties = [
   {
@@ -39,7 +40,8 @@ const Properties = () => {
   const [maxPrice, setMaxPrice] = useState("");
 
   const locations = ["All", ...new Set(properties.map(p => p.location))];
-
+  const navigate = useNavigate();
+  
   const filteredProperties = useMemo(() => {
     return properties.filter(p => {
       const matchesSearch =
@@ -124,6 +126,7 @@ const Properties = () => {
             <motion.div
               key={property.id}
               whileHover={{ y: -8, scale: 1.03 }}
+              onClick={() => navigate(`/property/${property.id}`)}
               transition={{ type: "spring", stiffness: 200 }}
               className="group bg-white/5 border border-white/10 rounded-2xl
                          overflow-hidden cursor-pointer backdrop-blur"

@@ -10,6 +10,7 @@ import Notfoud from './pages/Notfoud'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
+import PropertyDetail from './pages/PropertyDetail'
 // import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/service' element={<Element/>}/>
       <Route path='/properties' element={<Properties/>}/>
+      <Route path="/property/:id" element={<PropertyDetail />} />
       <Route path='*' element={<Notfoud/>}/>
      </Routes>
      <Footer/>

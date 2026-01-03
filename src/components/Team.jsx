@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import assets from "../assets/assets";
 
 const teamMembers = [
@@ -22,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Max Mitchell",
-    role: "Founder",
+    role: "Co-Founder",
     photo: assets.team4,
     social: assets.twitter,
   },
@@ -30,51 +31,65 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="bg-black text-white px-5 sm:px-10 lg:px-20 pt-16">
+    <section className="bg-black text-white px-5 sm:px-10 lg:px-20 py-20">
+
       {/* Header */}
-      <div className="max-w-2xl mb-10">
-        <img src={assets.star} className="h-6 mb-3" alt="star" />
-        <h1 className="text-3xl font-medium mb-3">Meet the Estatein Team</h1>
-        <p className="text-sm text-gray-400">
-          At Estatein, our success is driven by the dedication and expertise of
-          our team. Get to know the people behind our mission to make your real
-          estate dreams a reality.
+      <div className="max-w-3xl mx-auto text-center mb-16">
+        <img src={assets.star} className="h-6 mb-3 mx-auto" alt="star" />
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+          Meet the Estatein Team
+        </h1>
+        <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">
+          Our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality.
         </p>
       </div>
 
-      {/* Team Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Team Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {teamMembers.map((member, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-[#1A1A1A] border border-gray-700 rounded-3xl overflow-hidden flex flex-col"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.15 }}
+            className="bg-[#1A1A1A] border border-gray-700 rounded-3xl overflow-hidden
+                       flex flex-col shadow-lg hover:shadow-purple-600/40 transition-transform transform
+                       hover:-translate-y-2"
           >
-            <div className="flex flex-col items-center">
+            {/* Photo */}
+            <div className="relative overflow-hidden rounded-t-3xl">
               <img
                 src={member.photo}
-                className="p-5 h-60 w-full object-cover rounded-t-3xl"
                 alt={member.name}
+                className="w-full h-60 object-cover hover:scale-105 transition-transform duration-500"
               />
-              <div className="flex justify-center mb-4">
-                <img src={member.social} className="h-7" alt="social" />
-              </div>
             </div>
 
-            <div className="flex flex-col items-center mb-4">
-              <p className="text-sm font-medium">{member.name}</p>
-              <p className="text-xs text-gray-400">{member.role}</p>
+            {/* Social */}
+            <div className="flex justify-center -mt-8 mb-4">
+              <a href="#" className="bg-gradient-to-r from-purple-500 to-indigo-500 p-2 rounded-full hover:scale-110 transition-transform">
+                <img src={member.social} alt="social" className="h-6 w-6" />
+              </a>
             </div>
 
+            {/* Name & Role */}
+            <div className="text-center mb-6 px-4">
+              <p className="text-lg font-semibold">{member.name}</p>
+              <p className="text-gray-400 text-sm">{member.role}</p>
+            </div>
+
+            {/* CTA Button */}
             <div className="px-5 pb-5">
-              <button className="flex items-center justify-between w-full rounded-3xl border border-gray-700 bg-[#1A1A1A] px-3 py-2 hover:bg-gray-800 transition">
-                <span className="text-sm font-light">Say Hello</span>
-                <img src={assets.share} className="h-5" alt="share" />
+              <button className="w-full flex items-center justify-center gap-2 rounded-3xl border border-purple-600
+                                 bg-gradient-to-r from-purple-600 to-indigo-600 text-black font-semibold py-2
+                                 hover:opacity-90 transition-all">
+                Say Hello
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
